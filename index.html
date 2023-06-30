@@ -1,14 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MyWebsite</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
 </head>
 
 <body>
-    <h1></h1>
+    <div class="se-pre-con"></div>
+    <!-- Header -->
+
+    <nav class="navbar navbar-default fixed-top">
+        <div class="btn btn-learna" style="flex-grow: 1;">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2" id="logo">
+                <i class="fa fa-bars d-inline-block d-md-none mobile-nav"></i>
+                <a href="#" class="row"><img src="../assets/img/logo.png" width="50" height="50" class="" /></a>
+            </div>
+            <div class="float-xl-right">
+                <a class="btn btn-learna" href="#">Home</a>
+                <a class="btn btn-learna" href="#">My Profile</a>
+                <a class="btn btn-learna" href="#">Portofolio</a>
+                <a class="btn btn-learna" href="#">MessagesUs</a>
+            </div>
+        </div>
+    </nav>
+
+    <form>
+        <header class="">Form Belajar</header>
+
+
+
+    </form>
+
+
+    <!-- End Header -->
+    <!-- footer start -->
+    <footer id="main-footer">
+        <div class="row m-0">
+            <div class="col-lg-40 col-md-12 col-sm-12 text-center mt-4">
+                <img src="../assets/img/logo.png" class="img-fluid" width="50" height="50">
+                <br>
+                <span id="c-copyright">
+                    Copyright © 2023, Robi Pratama Septian Shah. All rights reserved.
+                </span>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
 </body>
+
+<script src="../assets/js/jquery-3.3.1.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/fancybox.min.js"></script>
+<script src="../assets/js/modernizr.js"></script>
+<script src="../assets/js/jquery.validate.js"></script>
+
+<!-- Toastr -->
+<script src="../assets/js/toastr.min599c.js2"></script>
+
+
+
+<script>
+    $(window).on("load", function(e) {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+
+
+        /* Toastr messages */
+        toastr.options.closeButton = true;
+        toastr.options.timeOut = 5000;
+
+        $('.mobile-nav').click(function() {
+            $('#sidebar').toggleClass('active');
+
+            $(this).toggleClass('fa-bars');
+            $(this).toggleClass('fa-times');
+        });
+
+
+    });
+</script>
 
 </html>
