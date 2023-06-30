@@ -1,0 +1,16 @@
+Module: https://docs.google.com/document/d/1yeC-xMxYGH0ZSmDvx3YYuhTh9L9yOMJIh3zj6TWzGA4/edit
+
+
+FLow Map: https://app.moqups.com/Y8iumYO1yOg5P2v9YSZ4pW7u8Hs15D2s/view/page/a1ed17169
+
+Github Classroom:  https://classroom.github.com/assignment-invitations/696d8872f2c6429f4ed9e5c5d0d60d2d/status
+
+Upload Project: https://pages.github.com/
+
+
+Mandatory files (required) : 
+index.html
+style.css
+script.js
+
+@robi Pratama Septian Shah
