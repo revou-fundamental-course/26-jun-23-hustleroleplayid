@@ -32,6 +32,35 @@
             <h6>Hi Robi, Welcome To Website</h6>
             <h6 id="subtitle">Ini Adalah website Latihan pertama</h6>
         </section>
+        <!-- disini slidshow -->
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" style="width:100%">
+                <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
     </section>
     <hr color="black">
     <hr color="black">
@@ -104,11 +133,11 @@
     <hr color="black">
     <div class="container">
 
-        <div class="row">
-            <div class="col">
-                <h1>Form Belajar</h1>
+        <div class="row-5">
+            <div class="col-5">
+                <h1>Message US</h1>
                 <p>
-                    Ini Adalah Website Latihan Pertama.
+                    Silahkan Kirimkan Kritik Dan Saran Anda Disini.
                 </p>
                 <form method="post" action="#">
 
@@ -157,27 +186,61 @@
 
                     <div class="form-group">
                         <label for="">Pesan Anda:</label>
-                        <textarea name="pesan" class="form-control" cols="30" rows="7"></textarea>
+                        <textarea name="pesan" class="form-control" cols="30" rows="7" placeholder="Pesan Anda"></textarea>
                     </div>
 
                     <input class="btn btn-primary" type="submit" value="POST">
 
                 </form>
-                <section>
-                    <div class="card border-success mb-3" style="max-width: 18rem;">
-                        <div class="card-header bg-transparent border-success">Header</div>
-                        <div class="card-body text-success">
-                            <h5 class="card-title">Success card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        <div class="card-footer bg-transparent border-success">Footer</div>
-                    </div>
-                </section>
             </div>
         </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
+    <script>
+        $(document).ready(function() {
+            var date_input = $('input[name="date"]');
+            var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
+            date_input.datepicker({
+                format: 'mm/dd/yyyy',
+                container: container,
+                todayHighlight: true,
+                autoclose: true,
+            })
+        })
+    </script>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
     <footer class="page-footer font-small blue">
         <div class="footer-copyright text-center py-3" id="btn btn-learna">© 2023 Copyright:
             <a href="/"> Website Latihan - Robi Pratama Septian Shah</a>
