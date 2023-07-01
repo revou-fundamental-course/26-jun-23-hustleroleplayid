@@ -1,85 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>MyWebsite</title>
-    <meta name="description" content="">
+    <meta name="description" content="MyWebSite">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="robots" content="all,follow">
-    <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="../assets/css/style.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>E-Groceries</title>
 </head>
 
 <body>
+    <header>
+        <section id="headerNAvigation" class="btn btn-learna">
+            <img id="container" src="../assets/img/logo.png"></img>
+            <nav id="navigation">
+                <a class="btn btn-learna" href="">Home</a>
+                <a class="btn btn-learna" href="">Our Package</a>
+                <a class="btn btn-learna" href="">Call Us</a>
+            </nav>
+        </section>
+        <section id="headerTitle">
+            <h1>Top Rated E-Groceries Shop in Indonesia</h1>
+            <h5 id="subtitle">Every Day with Best Ingredients</h5>
+        </section>
+    </header>
 
-    <nav class="navbar navbar-default fixed-top">
-        <div class="btn btn-learna" style="flex-grow: 1;width:70px;height:70px;">
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2" id="logo">
-                <i class="fa fa-bars d-inline-block d-md-none mobile-nav"></i>
-                <a href="#" class="row"><img src="../assets/img/logo.png" style="float:left;width:60px;height:60px;"></a>
-            </div>
-            <div class="float-sm-start">
-                <a class="btn btn-learna" href="#">Home</a>
-                <a class="btn btn-learna" href="#">My Profile</a>
-                <a class="btn btn-learna" href="#">Portofolio</a>
-                <a class="btn btn-learna" href="#">MessagesUs</a>
-            </div>
-        </div>
-    </nav>
+    <main>
+        <section class="btn btn-learna">
+
+            <form>
+                <h4>Form Belajar</h4>
+                <h5>Ini Adalah Website Latihan Pertama</h5>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Nama</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nama">
+                </div>
+
+            </form>
+        </section>
+    </main>
+    <main>
+        <section id="callUs">
+            <article id="article">
+                <img src="../assets/img/background.jpg">
+                <h5>"Setiap Hari Membeli Buah Disini Setiap Hari Sabtu Diskon 20%.</h5>
+                <div>
+                    <h3>Robi PSS</h3>
+                    <h4 id="Testimoni">2</h4>
+                    <h2>2</h2>
+                    <h3>1</h3>
+                </div>
+            </article>
+            <section id="form">
+                <h2 class="titleform">Contact US</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Your Name:</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Name">
+                        <small id="emailHelp" class="form-text text-muted">Masukan Nama Anda!</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Email Address</label>
+                        <input type="email" class="form-control" id="exampleInputPassword1" placeholder="email@gmail.com">
+                        <small id="emailHelp" class="form-text text-muted">Masukan Email Anda!</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Pilih Divisi</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>Pilih</option>
+                          <option>Divisi Custumer Service</option>
+                          <option>Divisi Sales</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">SEND</button>
+                </form>
+                <p class="titleSubForm">*Sales Akan Hubungi Anda 1x24 Jam Setelah Data Kami Terima.</p>
+            </section>
+        </section>
+
+        <select name="" id="">
 
 
-    <footer id="main-footer">
-        <div class="row m-1">
-            <div class="col-lg-40 col-md-12 col-sm-12 text-center mt-4">
-                <img src="../assets/img/logo.png" class="img-fluid" width="50" height="50">
-                <br>
-                <span id="c-copyright">
-                    Copyright © 2023, Robi Pratama Septian Shah. All rights reserved.
-                </span>
-            </div>
-        </div>
-    </footer>
+        </select>
+    </main>
 
 
 </body>
-
-<script src="../assets/js/jquery-3.3.1.min.js"></script>
-<script src="../assets/js/bootstrap.min.js"></script>
-<script src="../assets/js/fancybox.min.js"></script>
-<script src="../assets/js/modernizr.js"></script>
-<script src="../assets/js/jquery.validate.js"></script>
-
-<!-- Toastr -->
-<script src="../assets/js/toastr.min599c.js2"></script>
-
-
-
-<script>
-    $(window).on("load", function(e) {
-        // Animate loader off screen
-        $(".se-pre-con").fadeOut("slow");
-    });
-</script>
-<script type="text/javascript">
-    $(document).ready(function() {
-
-
-        /* Toastr messages */
-        toastr.options.closeButton = true;
-        toastr.options.timeOut = 5000;
-
-        $('.mobile-nav').click(function() {
-            $('#sidebar').toggleClass('active');
-
-            $(this).toggleClass('fa-bars');
-            $(this).toggleClass('fa-times');
-        });
-
-
-    });
-</script>
 
 </html>
