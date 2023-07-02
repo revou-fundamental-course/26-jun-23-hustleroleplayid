@@ -16,3 +16,46 @@ style.css
 script.js
 
 @robi Pratama Septian Shah
+
+
+
+Situs Web Portofolio
+
+
+
+Detail Persiapan dan Penyerahan
+Batas akhir pada hari Kamis di minggu ke-2 pukul 23.59 WIB
+Tautan untuk mengirimkan tugas akan dibagikan di Discord dan Email
+
+
+Perkenalan
+
+Dalam kursus singkat sepuluh hari ini, Anda akan mempelajari semua tentang menjadi insinyur perangkat lunak, termasuk kemungkinan jalur karier. Kami juga akan memberi Anda kesempatan untuk mempraktikkan tanggung jawab utama seorang insinyur perangkat lunak juga!
+
+Sebelum kamu memulai...
+Pastikan Anda telah mengunduh Visual Studio Code, Git dan memiliki akses ke Google Chrome
+
+Petunjuk Proyek Mini
+
+Sebagai Insinyur Perangkat Lunak, Anda diminta untuk membuat situs web E-Groceries dengan formulir yang ditentukan untuk mendapatkan informasi dan pertanyaan pribadi pemangku kepentingan Anda (Nama, Email, Nomor Telepon, dan Pesan) dengan menggunakan validasi JavaScript. Buat situs web menggunakan desain mockup di bawah ini:
+
+
+Alur kerja:
+Mengiris sesuai dengan maket di atas
+Navigasi dalam Satu Halaman
+Beranda = Bagian Spanduk (Konten Halaman Atas)
+Bagian Paket Kami (Konten Halaman Tengah)
+Bagian Tindakan Panggilan (Konten Bagian Bawah Halaman)
+Spanduk menggunakan slide otomatis menggunakan JavaScript
+Formulir Hubungi Kami mengimplementasikan Validasi JavaScript.
+Terapkan Desain Responsif di setiap halaman (di Desktop dan Seluler)
+Letakkan file css di dalam folder css/
+Letakkan file javascript di dalam folder js/
+Letakkan semua gambar di dalam folder img/
+Setelah menyelesaikan situs web Anda, unggah Kode Sumber di Kelas GitHub dan publikasikan situs web di Halaman GitHub
+Kirimkan repositori URL dan situs web yang dipublikasikan melalui pengiriman Typeform khusus yang akan dibagikan di Discord dan Email
+
+File wajib (wajib):
+index.html
+style.css
+script.js
