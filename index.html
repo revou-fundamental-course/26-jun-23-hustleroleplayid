@@ -57,8 +57,7 @@ form.whatsapp-form {
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"/>
 </head>
 
-<!-- <body> -->
-    <body oncontextmenu="return true" onkeydown="return true;" onmousedown="return true;">
+<body oncontextmenu="return true" onkeydown="return true;" onmousedown="return true;">
     <nav>
         <a href="#" class="tombol-menu">
             <span class="garis"></span>
@@ -73,17 +72,16 @@ form.whatsapp-form {
             <div class="menu">
                 <ul>
                     <li><a class="tbl-biru" href="#home">Home</a></li>
-                    <li><a class="tbl-biru" href="#Advantages">Our Package</a></li>
-                    <!-- <li><a class="tbl-biru" href="#tutors">Call Us</a></li>
-                    <li><a class="tbl-biru" href="#messageus">Message Us</a></li> -->
-                    <li><a class="tbl-biru" href="#ctkus">Contact</a></li>
+                    <li><a class="tbl-biru" href="#partners">Our Package</a></li>
+                    <li><a class="tbl-biru" href="#tutors">Call Us</a></li>
+                    <!--<li><a class="tbl-biru" href="#messageus">Message Us</a></li>-->
+                    <li><a class="tbl-biru" href="#wa_name">Contact</a></li>
                     <!-- <li><a href="" class="tbl-biru">Sign Up</a></li> -->
                 </ul>
             </div>
         </div>
     </nav>
     <div class="wrapper">
-        <!-- <p class="deskripsi" id="nama">Hai, Welcome To Website</p> -->
         <p>Hai, <span id="nama"></span> Welcome To Website Belanja Online!</p>
 
         <div id="headerTitle2">
@@ -120,18 +118,17 @@ form.whatsapp-form {
         <!-- untuk home -->
         <section id="home">
             <div class="kolom">
-                <img class="banner-logo" src="../assets/img/lgodepan.avif" />
+                <img class="banner-logo" src="https://img.freepik.com/free-vector/supermarket-food-shelves-eggplant-cabbage-carrot-peppers-onions-corn-bread-potatoes-shopping-fresh-vector-illustration_1284-46271.jpg?w=740&t=st=1688304438~exp=1688305038~hmac=174fd35c378c03782d4a4ded867d9070bdfcb14dd9a702d7a248e610f861e4da"
+                />
                 <h2>Tetap Sehat, Tetap Semangat</h2>
                 <p>Hemat 20% Untuk Hari Sabtu!.</p>
-                <p><a href="" class="tbl-pink">SHOP</a></p>
+                <p><a href="#wa_name" class="tbl-pink">SHOP</a></p>
             </div>
             
-            <form class="whatsapp-form">
-                <h4 class="ctus" id="ctkus">Contact US</h4>
-                <em>
-                    Sales Akan Menghubungi anda 1x24 jam setelah data kami terima..
-                </em>
-                <div class="datainput">
+<form class="whatsapp-form">
+<h4 class="ctus">Contact US</h4>
+<em>Sales Akan Menghubungi anda 1x24 jam setelah data kami terima..</em>
+<div class="datainput">
 <input class="validate" id="wa_name" name="name" required="" type="text" value=''/>
 <span class="highlight"></span><span class="bar"></span>
 <label>Your Name</label>
@@ -170,7 +167,7 @@ form.whatsapp-form {
 </form>
     </div>
     </section>
-
+    
     <script type="text/javascript">
 //<![CDATA[
 $(document).on('click','.send_form', function(){
@@ -178,7 +175,7 @@ var input_blanter = document.getElementById('wa_email');
 
 /* Whatsapp Settings */
 var walink = 'https://web.whatsapp.com/send',
-    phone = '6289638051458',
+    phone = '6281977094280',
     walink2 = 'Halo saya ingin ',
     text_yes = 'Terkirim.',
     text_no = 'Isi semua Formulir lalu klik Send.';
@@ -218,7 +215,7 @@ document.getElementById("text-info").innerHTML = '<span class="no">'+text_no+'</
 </script>
 
 
-    <!-- <section id="courses">
+     <!-- <section id="courses">
             <div class="kolom">
                 <p class="deskripsi">You Will Need This</p>
                 <h2>Online Courses</h2>
@@ -240,11 +237,11 @@ document.getElementById("text-info").innerHTML = '<span class="no">'+text_no+'</
 
             <div class="tutor-list">
                 <div class="kartu-tutor">
-                    <img src="../assets/img/profile1.jpg" />
+                    <img src="https://dfu1k3y1rami2.cloudfront.net/wp-content/uploads/2014/07/26195109/2020_cb.jpg" />
                     <p>Jakarta</p>
                 </div>
                 <div class="kartu-tutor">
-                    <img src="../assets/img/profile2.jpeg" />
+                    <img src="https://images.ctfassets.net/1wryd5vd9xez/4DxzhQY7WFsbtTkoYntq23/a4a04701649e92a929010a6a860b66bf/https___cdn-images-1.medium.com_max_2000_1_Y6l_FDhxOI1AhjL56dHh8g.jpeg" />
                     <p>Bandung</p>
                 </div>
                 <div class="kartu-tutor">
@@ -252,7 +249,7 @@ document.getElementById("text-info").innerHTML = '<span class="no">'+text_no+'</
                     <p>Surabaya</p>
                 </div>
                 <div class="kartu-tutor">
-                    <img src="../assets/img/profile5.jpg" />
+                    <img src="https://blogs-images.forbes.com/jackkelly/files/2019/06/Jack-Kelly_avatar_1559658819-400x400.jpg" />
                     <p>Medan</p>
                 </div>
             </div>
@@ -262,7 +259,7 @@ document.getElementById("text-info").innerHTML = '<span class="no">'+text_no+'</
     <section id="tutors">
         <div class="tengah">
             <div class="kolom">
-                <p class="deskripsi" id="Advantages">Our Advantages</p>
+                <p class="deskripsi">Our Advantages</p>
                 <h2>No.1 Supermarket</h2>
                 <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, optio!</p> -->
             </div>
@@ -318,31 +315,9 @@ document.getElementById("text-info").innerHTML = '<span class="no">'+text_no+'</
     </section>
     </div>
 
-    <!-- <div id="contact">
-        <div class="wrapper">
-            <div class="footer">
-                <div class="footer-section">
-                    <h3>RumahRafif.</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, culpa!</p>
-                </div>
-                <div class="footer-section">
-                    <h3>About</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, culpa!</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Contact</h3>
-                    <p>Jl. Laksda Adisucipto Sleman Yogyakarta</p>
-                    <p>Kode Pos: 57365</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Social</h3>
-                    <p><b>YouTube: </b>Programming di RumahRafif</p>
-                </div>
-            </div>
-        </div>
-    </div> -->
 
-    <!-- <section id="home">
+
+  <!--  <section id="home">
         <div class="kolom">
             <div class="container">
                 <form autocomplete="off">
@@ -555,6 +530,9 @@ document.getElementById("text-info").innerHTML = '<span class="no">'+text_no+'</
     </div>
 
     <script src="../assets/js/contoh.js"></script>
+    <script src="../assets/js/form.js"></script>
+    
+    <!--<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>-->
 
     <script>
         var nama = prompt("Welcome Masukan Nama Kamu ya")
@@ -566,49 +544,49 @@ document.getElementById("text-info").innerHTML = '<span class="no">'+text_no+'</
         document.getElementById("nama2").innerText = nama2;
     </script> -->
 
-    <script>
-        $(document).on('click', '.send_form', function() {
-            var input_blanter = document.getElementById('wa_email');
+    <!--<script>-->
+    <!--    $(document).on('click', '.send_form', function() {-->
+    <!--        var input_blanter = document.getElementById('wa_email');-->
 
-            /* Whatsapp Settings */
-            var walink = 'https://web.whatsapp.com/send',
-                phone = '6281977094280',
-                walink2 = 'Halo saya ingin ',
-                text_yes = 'Terkirim.',
-                text_no = 'Isi semua Formulir lalu klik Send.';
 
-            /* Smartphone Support */
-            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-                var walink = 'whatsapp://send';
-            }
+    <!--        var walink = 'https://web.whatsapp.com/send',-->
+    <!--            phone = '6281977094280',-->
+    <!--            walink2 = 'Halo saya ingin ',-->
+    <!--            text_yes = 'Terkirim.',-->
+    <!--            text_no = 'Isi semua Formulir lalu klik Send.';-->
 
-            if ("" != input_blanter.value) {
 
-                /* Call Input Form */
-                var input_select1 = $("#wa_select :selected").text(),
-                    input_name1 = $("#wa_name").val(),
-                    input_email1 = $("#wa_email").val(),
-                    input_number1 = $("#wa_number").val(),
-                    input_url1 = $("#wa_url").val(),
-                    input_textarea1 = $("#wa_textarea").val();
+    <!--        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {-->
+    <!--            var walink = 'whatsapp://send';-->
+    <!--        }-->
 
-                /* Final Whatsapp URL */
-                var blanter_whatsapp = walink + '?phone=' + phone + '&text=' + walink2 + '%0A%0A' +
-                    '*Name* : ' + input_name1 + '%0A' +
-                    '*Email Address* : ' + input_email1 + '%0A' +
-                    '*Select Option* : ' + input_select1 + '%0A' +
-                    '*Input Number* : ' + input_number1 + '%0A' +
-                    '*URL/Link* : ' + input_url1 + '%0A' +
-                    '*Description* : ' + input_textarea1 + '%0A';
+    <!--        if ("" != input_blanter.value) {-->
 
-                /* Whatsapp Window Open */
-                window.open(blanter_whatsapp, '_blank');
-                document.getElementById("text-info").innerHTML = '<span class="yes">' + text_yes + '</span>';
-            } else {
-                document.getElementById("text-info").innerHTML = '<span class="no">' + text_no + '</span>';
-            }
-        });
-    </script>
+
+    <!--            var input_select1 = $("#wa_select :selected").text(),-->
+    <!--                input_name1 = $("#wa_name").val(),-->
+    <!--                input_email1 = $("#wa_email").val(),-->
+    <!--                input_number1 = $("#wa_number").val(),-->
+    <!--                input_url1 = $("#wa_url").val(),-->
+    <!--                input_textarea1 = $("#wa_textarea").val();-->
+
+
+    <!--            var blanter_whatsapp = walink + '?phone=' + phone + '&text=' + walink2 + '%0A%0A' +-->
+    <!--                '*Name* : ' + input_name1 + '%0A' +-->
+    <!--                '*Email Address* : ' + input_email1 + '%0A' +-->
+    <!--                '*Select Option* : ' + input_select1 + '%0A' +-->
+    <!--                '*Input Number* : ' + input_number1 + '%0A' +-->
+    <!--                '*URL/Link* : ' + input_url1 + '%0A' +-->
+    <!--                '*Description* : ' + input_textarea1 + '%0A';-->
+
+
+    <!--            window.open(blanter_whatsapp, '_blank');-->
+    <!--            document.getElementById("text-info").innerHTML = '<span class="yes">' + text_yes + '</span>';-->
+    <!--        } else {-->
+    <!--            document.getElementById("text-info").innerHTML = '<span class="no">' + text_no + '</span>';-->
+    <!--        }-->
+    <!--    });-->
+    <!--</script>-->
 
 </body>
 
