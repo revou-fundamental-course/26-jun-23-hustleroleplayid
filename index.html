@@ -3,450 +3,554 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="MyWebSite">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
-    <meta name="robots" content="all,follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <title>Latihan - Website</title>
+    <script src="../assets/js/script.js" defer></script>
     <link rel="stylesheet" href="../assets/css/style.css">
-    <!-- <link rel="stylesheet" href="../assets/js/style.js"> -->
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-
-    <!-- Javascript Bootstrap -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js">
-    </script>
-    <!-- Javascript Bootstrap Datepicker -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.js">
-    </script>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
-    </script>
-
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
-
-    <title>E-Groceries</title>
+    <link rel="stylesheet" href="../assets/css/contoh.css" />
 </head>
 
 <body>
-
-
-    <!--formden.js communicates with FormDen server to validate fields and submit via AJAX -->
-    <script type="text/javascript" src="https://formden.com/static/cdn/formden.js"></script>
-
-    <!-- Special version of Bootstrap that is isolated to content wrapped in .bootstrap-iso -->
-    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
-
-    <!--Font Awesome (added because you use icons in your prepend/append)-->
-    <link rel="stylesheet" href="https://formden.com/static/cdn/font-awesome/4.4.0/css/font-awesome.min.css" />
-
-    <!-- Inline CSS based on choices in "Settings" tab -->
-    <style>
-        .bootstrap-iso .formden_header h2,
-        .bootstrap-iso .formden_header p,
-        .bootstrap-iso form {
-            font-family: Arial, Helvetica, sans-serif;
-            color: black
-        }
-        
-        .bootstrap-iso form button,
-        .bootstrap-iso form button:hover {
-            color: white !important;
-        }
-        
-        .asteriskField {
-            color: red;
-        }
-    </style>
-
-
-    <header>
-        <div id="headerNAvigation" class="btn btn-learna">
-            <img id="container" src="../assets/img/logo.png">
-            <nav id="navigation">
-                <a class="btn btn-learna" href="">Home</a>
-                <a class="btn btn-learna" href="">Our Package</a>
-                <a class="btn btn-learna" href="">Call Us</a>
-                <a class="btn btn-learna" href="">MyProfile</a>
-                <a class="btn btn-learna" href="">Portofolio</a>
-                <a class="btn btn-learna" href="">Message Us</a>
-                <a class="btn btn-learna" href="">Achievement</a>
-            </nav>
+    <nav>
+        <a href="#" class="tombol-menu">
+            <span class="garis"></span>
+            <span class="garis"></span>
+            <span class="garis"></span>
+        </a>
+        <div class="wrapper" id="ukuran-logo">
+            <img src="../assets/img/logo.png">
         </div>
-        <div id="headerTitle">
-            <h1>Top Rated E-Groceries Shop in Indonesia</h1>
-            <h5 id="subtitle">Every Day with Best Ingredients</h5>
+        <div class="wrapper">
+            <!-- <div class="logo"><a href='#home'>Website</a></div> -->
+            <div class="menu">
+                <ul>
+                    <li><a class="tbl-biru" href="#home">Home</a></li>
+                    <li><a class="tbl-biru" href="#Advantages">Our Package</a></li>
+                    <!-- <li><a class="tbl-biru" href="#tutors">Call Us</a></li>
+                    <li><a class="tbl-biru" href="#messageus">Message Us</a></li> -->
+                    <li><a class="tbl-biru" href="#ctkus">Contact</a></li>
+                    <!-- <li><a href="" class="tbl-biru">Sign Up</a></li> -->
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
+    <div class="wrapper">
+        <!-- <p class="deskripsi" id="nama">Hai, Welcome To Website</p> -->
+        <p>Hai, <span id="nama"></span> Welcome To Website Belanja Online!</p>
 
-    <div id="headerTitle2">
         <div id="headerTitle2">
-            <h6>Hi Robi, Welcome To Website</h6>
-            <h6 id="subtitle">Ini Adalah website Latihan pertama</h6>
-        </div>
-        <!-- disini slidshow -->
-        <div class="slideshow-container">
+            <!-- disini slidshow -->
+            <div class="slideshow-container">
 
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" style="width:100%">
-                <div class="text">Caption Text</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" style="width:100%">
-                <div class="text">Caption Two</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
-                <div class="text">Caption Three</div>
-            </div>
-
-        </div>
-        <br>
-
-        <div style="text-align:center">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
-    </div>
-    <br><br>
-    <div id="callUs">
-        <div id="article">
-            <img src="../assets/img/background.jpg">
-            <em id="subtitle">"Setiap Hari Sabtu Diskon 20%".</em>
-
-        </div>
-        <form class="form-contact-us" action="#">
-            <div>
-                <h5 class="ctus">CONTACT US</h5>
-
-                <br>
-                <div>
-                    <label>Your Name</label>
-                    <input class="form-control" type="text" id="fname" name="firstname" placeholder="Your Name">
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="../assets/img/banner1.avif" style="width:100%">
+                    <div class="text"></div>
                 </div>
-                <div>
-                    <label>Email Address</label>
-                    <input class="form-control" type="text" id="lname" name="lastname" placeholder="example@email.com">
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="../assets/img/banner2.avif" style="width:100%">
+                    <div class="text"></div>
                 </div>
-                <div>
-                    <label>What are you interested in</label>
-                    <select class="name22" id="country" name="country">
-                            <option value="australia">Pilih</option>
-                            <option value="australia">Bogor</option>
-                            <option value="canada">Jakarta</option>
-                            <option value="usa">Medan</option>
-                            </select>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="../assets/img/banner3.avif" style="width:100%">
+                    <div class="text"></div>
                 </div>
-                <em class="hub124">
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <!-- untuk home -->
+        <section id="home">
+            <div class="kolom">
+                <img class="banner-logo" src="../assets/img/lgodepan.avif" />
+                <h2>Tetap Sehat, Tetap Semangat</h2>
+                <p>Hemat 20% Untuk Hari Sabtu!.</p>
+                <p><a href="" class="tbl-pink">SHOP</a></p>
+            </div>
+            <!-- <div class="container"> -->
+            <!-- <form autocomplete="off">
+                    <h4 class="ctus">Contact US</h4>
+                    <em>
+                        Sales Akan Menghubungi anda 1x24 jam setelah data kami terima..
+                    </em>
+                    <br>
+                    <div class="input-section">
+                        <label>Nama Lengkap<span class="required-color">*</span></label>
+                        <input type="text" placeholder="Nama Lengkap" id="first-name-input" required />
+                        <span id="first-name-error" class="hide required-color error-message">Input yang bener! :-P</span>
+                        <span id="empty-first-name" class="hide required-color error-message">Nama Lengkap Tidak Boleh Kosong</span>
+                    </div>
+                    <div class="input-section">
+
+
+                        <div class="input-section">
+                            <label>Email <span class="required-color">*</span></label>
+                            <input type="email" placeholder="Enter Email" id="email" required />
+                            <span id="email-error" class="hide required-color error-message">Input yang bener! :-P</span>
+                            <span id="empty-email" class="hide required-color error-message">Email Tidak Boleh Kosong</span>
+                        </div>
+
+                        <div>
+                            <label>What are you interested in</label>
+                            <select class="name22" id="country" name="country">
+                                <option value="Pilih">Pilih</option>
+                                <option value="Bogor">Bogor</option>
+                                <option value="Jakarta">Jakarta</option>
+                                <option value="Medan">Medan</option>
+                                </select>
+                        </div>
+
+                        <button id="submit-button">Submit</button>
+                    </div>
+                </form> -->
+            <form class="whatsapp-form">
+                <h4 class="ctus" id="ctkus">Contact US</h4>
+                <em>
                     Sales Akan Menghubungi anda 1x24 jam setelah data kami terima..
                 </em>
-                <input class="submitedbutton" type="submit" value="KIRIM">
+                <div class="datainput">
+                    <input class="validate" id="wa_name" name="name" required="" type="text" value='' />
+                    <span class="highlight"></span><span class="bar"></span>
+                    <label>Your Name</label>
+                </div>
+                <div class="datainput">
+                    <input class="validate" id="wa_email" name="email" required="" type="email" value='' />
+                    <span class="highlight"></span><span class="bar"></span>
+                    <label>Email Address</label>
+                </div>
+                <div class="datainput">
+                    <select id="wa_select">
+                      <option hidden='hidden' selected='selected' value='default'>Select Option</option>
+                      <option value="1">List Option 1</option>
+                      <option value="2">List Option 2</option>
+                      <option value="3">List Option 3</option>
+                    </select>
+                </div>
+                <div class="datainput">
+                    <input class="validate" id="wa_number" name="count" required="" type="number" value='' />
+                    <span class="highlight"></span><span class="bar"></span>
+                    <label>Input Number</label>
+                </div>
+                <div class="datainput">
+                    <input class="validate" id="wa_url" name="url" required="" type="url" value='' />
+                    <span class="highlight"></span><span class="bar"></span>
+                    <label>URL/Link</label>
+                    <p>Link blog Anda, gunakan http:// atau https://</p>
+                </div>
+                <div class="datainput">
+                    <textarea id='wa_textarea' placeholder='' maxlength='5000' row='1' required=""></textarea>
+                    <span class="highlight"></span><span class="bar"></span>
+                    <label>Description</label>
+                </div>
+                <a class="send_form" href="javascript:void" type="submit" title="Send to Whatsapp">Send to Whatsapp</a>
+                <div id="text-info"></div>
+            </form>
+    </div>
+    </section>
+
+
+    <!-- <section id="courses">
+            <div class="kolom">
+                <p class="deskripsi">You Will Need This</p>
+                <h2>Online Courses</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed deserunt voluptatibus possimus blanditiis reiciendis. Qui, facilis! Delectus exercitationem dolores sapiente?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed deserunt voluptatibus possimus blanditiis reiciendis. Qui, facilis! Delectus exercitationem dolores sapiente?</p>
+                <p><a href="" class="tbl-biru">Pelajari Lebih Lanjut</a></p>
+            </div>
+            <img src="https://img.freepik.com/free-vector/online-learning-isometric-concept_1284-17947.jpg?size=626&ext=jpg&ga=GA1.2.1769275626.1605867161" />
+        </section> -->
+
+    <!-- untuk tutors -->
+    <section id="tutors">
+        <div class="tengah">
+            <div class="kolom">
+                <p class="deskripsi">Our Headquarter</p>
+                <h2>Head</h2>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, optio!</p> -->
+            </div>
+
+            <div class="tutor-list">
+                <div class="kartu-tutor">
+                    <img src="../assets/img/profile1.jpg" />
+                    <p>Jakarta</p>
+                </div>
+                <div class="kartu-tutor">
+                    <img src="../assets/img/profile2.jpeg" />
+                    <p>Bandung</p>
+                </div>
+                <div class="kartu-tutor">
+                    <img src="https://images.fastcompany.net/image/upload/w_596,c_limit,q_auto:best,f_auto/fc/3021752-inline-i-1-why-square-designed-its-new-offices-to-work-like-a-city.jpg" />
+                    <p>Surabaya</p>
+                </div>
+                <div class="kartu-tutor">
+                    <img src="../assets/img/profile5.jpg" />
+                    <p>Medan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tutors">
+        <div class="tengah">
+            <div class="kolom">
+                <p class="deskripsi" id="Advantages">Our Advantages</p>
+                <h2>No.1 Supermarket</h2>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, optio!</p> -->
+            </div>
+
+            <div class="tutor-list">
+                <div class="kartu-tutor">
+                    <img src="../assets/img/sayuran.jpg" />
+                    <p>Sayuran & Buah Segar</p>
+                </div>
+                <div class="kartu-tutor">
+                    <img src="../assets/img/discond20.avif" />
+                    <p>Hemat 20% Untuk Hari Sabtu!.</p>
+                </div>
+                <div class="kartu-tutor">
+                    <img src="../assets/img/discond20.avif" />
+                    <p>Discond 20% Jika Pakai Cartu Credit BAC</p>
+                </div>
+                <div class="kartu-tutor">
+                    <img src="../assets/img/supermarket.png" />
+                    <p>Tempat Bersih dan BerAC</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- untuk partners -->
+    <section id="partners">
+        <div class="tengah">
+            <div class="kolom">
+                <p class="deskripsi">Our Top Produk</p>
+                <h2>Top Produk</h2>
+                <p>Segar Hemat Sehat!.</p>
+            </div>
+
+            <div class="partner-list">
+                <div class="kartu-partner">
+                    <img src="../assets/img/wortel.jpeg" />
+                </div>
+                <div class="kartu-partner">
+                    <img src="../assets/img/mangga.jpeg" />
+                </div>
+                <div class="kartu-partner">
+                    <img src="../assets/img/durian.jpeg" />
+                </div>
+                <div class="kartu-partner">
+                    <img src="../assets/img/ayam.jpg" />
+                </div>
+                <div class="kartu-partner">
+                    <img src="../assets/img/wagyu.jpg" />
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <!-- <div id="contact">
+        <div class="wrapper">
+            <div class="footer">
+                <div class="footer-section">
+                    <h3>RumahRafif.</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, culpa!</p>
+                </div>
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, culpa!</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Jl. Laksda Adisucipto Sleman Yogyakarta</p>
+                    <p>Kode Pos: 57365</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Social</h3>
+                    <p><b>YouTube: </b>Programming di RumahRafif</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <section id="home">
+        <div class="kolom">
+            <div class="container">
+                <form autocomplete="off">
+                    <h4>Message Us</h4>
+                    <div class="input-section">
+                        <label>Nama<span class="required-color">*</span></label>
+                        <input type="text" placeholder="Nama" id="nama2" required />
+                        <span id="first-name-error" class="hide required-color error-message">Input yang bener! :-P</span
+          >
+          <span id="empty-first-name" class="hide required-color error-message"
+            >Nama Depan Tidak Boleh Kosong</span
+          >
+        </div>
+        <div class="input-section">
+          <label>Tanggal Lahir<span class="required-color">*</span></label>
+                        <input type="date" required />
+                        <span id="last-name-error" class="hide required-color error-message">Input yang bener! :-P</span
+          >
+          <span id="empty-last-name" class="hide required-color error-message">
+            Tanggal Lahir Tidak Boleh Kosong
+          </span>
+                    </div>
+
+                    <div class="input-section">
+                        <div>
+                            <label>Jenis Kelamin</label>
+                            <select class="name22" id="country" name="country">
+                        <option value="disable">Pilih</option>
+                        <option value="australia">Laki-Laki</option>
+                        <option value="canada">Perempuan</option>
+                        </select>
+                        </div>
+                        <span id="email-error" class="hide required-color error-message">Input yang bener! :-P</span>
+                        <span id="empty-email" class="hide required-color error-message">Jenis Kelamin Tidak Boleh Kosong</span>
+                    </div>
+
+                    <div>
+                        <label>Pesan<span class="required-color">*</span></label>
+                        <textarea id="alamat-1" name="alamat_1" rows="10" cols="50">Isi Pesan Anda!</textarea>
+                    </div> -->
+
+    <!-- <div class="input-section">
+                <label>No Telepon <span class="required-color">*</span></label>
+                <input type="number" placeholder="Enter Phone Number" id="phone" required />
+                <span id="phone-error" class="hide required-color error-message">Nomor Telepon Harus Memiliki 12 Digit</span
+          >
+          <span id="empty-phone" class="hide required-color error-message">
+            Nomor Telepon Tidak Boleh Kosong
+          </span>
+            </div>
+
+            <div class="input-section">
+                <label>Password <span class="required-color">*</span></label>
+                <input type="password" placeholder="Enter Password" id="password" required />
+                <span id="password-error" class="hide required-color error-message"> Kata Sandi Harus Memiliki Huruf, Simbol Khusus, Angka, dan Panjang 8 Karakter</span>
+                <span id="empty-password" class="hide required-color error-message">
+            Password Cannot Be Empty
+          </span>
+            </div>
+
+            <div class="input-section">
+                <label>Confirm Password <span class="required-color">*</span></label>
+                <input type="password" id="verify-password" placeholder="Confirm Password" required />
+                <span id="verify-password-error" class="hide required-color error-message">Should Be Same As Previous Password</span
+          >
+          <span
+            id="empty-verify-password"
+            class="hide required-color error-message"
+            >Password Cannot Be Empty</span
+          > -->
+    <!-- <button id="submit-button">Submit</button>
+    </div>
+    <div class="kolom">
+        <table border="1">
+            <tr>
+                <th colspan="3" bgcolor="yellow">View Message Us</th>
+            </tr>
+            <tr>
+                <td rowspan="4">
+                    <img src="https://zonautara.com/wp-content/uploads/2022/02/belanja-online.png" width="200" />
+                </td>
+            </tr>
+            <tr>
+                <td>Nama</td>
+                <td>Nama:<span id="nama2"></span> Anda</td> -->
+    <!-- <p>Hai, <span id="nama"></span> Welcome To Website</p> -->
+
+    <!-- </tr>
+    <tr>
+        <td>Tanggal Lahir</td>
+        <td></td>
+    </tr>
+    </table>
+    </div>
+    </form>
+
+
+    </div>
+
+
+    </section> -->
+
+    <!-- <div class="container">
+        <form autocomplete="off">
+            <h4>Form Belajar Validation</h4>
+            <div class="input-section">
+                <label>Nama<span class="required-color">*</span></label>
+                <input type="text" placeholder="Nama" id="first-name-input" required />
+                <span id="first-name-error" class="hide required-color error-message">Input yang bener! :-P</span
+          >
+          <span id="empty-first-name" class="hide required-color error-message"
+            >Nama Depan Tidak Boleh Kosong</span
+          >
+        </div>
+        <div class="input-section">
+          <label>Tanggal Lahir<span class="required-color">*</span></label>
+                <input type="date" required />
+                <span id="last-name-error" class="hide required-color error-message">Input yang bener! :-P</span
+          >
+          <span id="empty-last-name" class="hide required-color error-message">
+            Tanggal Lahir Tidak Boleh Kosong
+          </span>
+            </div>
+
+            <div class="input-section">
+                <div>
+                    <label>Jenis Kelamin</label>
+                    <select class="name22" id="country" name="country">
+                        <option value="disable">Pilih</option>
+                        <option value="australia">Laki-Laki</option>
+                        <option value="canada">Perempuan</option>
+                        </select>
+                </div>
+                <span id="email-error" class="hide required-color error-message">Input yang bener! :-P</span>
+                <span id="empty-email" class="hide required-color error-message">Jenis Kelamin Tidak Boleh Kosong</span>
+            </div>
+
+            <div>
+                <label>Pesan<span class="required-color">*</span></label>
+                <textarea id="alamat-1" name="alamat_1" rows="10" cols="50">Isi Pesan Anda!</textarea>
+            </div> -->
+
+    <!-- <div class="input-section">
+                <label>No Telepon <span class="required-color">*</span></label>
+                <input type="number" placeholder="Enter Phone Number" id="phone" required />
+                <span id="phone-error" class="hide required-color error-message">Nomor Telepon Harus Memiliki 12 Digit</span
+          >
+          <span id="empty-phone" class="hide required-color error-message">
+            Nomor Telepon Tidak Boleh Kosong
+          </span>
+            </div>
+
+            <div class="input-section">
+                <label>Password <span class="required-color">*</span></label>
+                <input type="password" placeholder="Enter Password" id="password" required />
+                <span id="password-error" class="hide required-color error-message"> Kata Sandi Harus Memiliki Huruf, Simbol Khusus, Angka, dan Panjang 8 Karakter</span>
+                <span id="empty-password" class="hide required-color error-message">
+            Password Cannot Be Empty
+          </span>
+            </div>
+
+            <div class="input-section">
+                <label>Confirm Password <span class="required-color">*</span></label>
+                <input type="password" id="verify-password" placeholder="Confirm Password" required />
+                <span id="verify-password-error" class="hide required-color error-message">Should Be Same As Previous Password</span
+          >
+          <span
+            id="empty-verify-password"
+            class="hide required-color error-message"
+            >Password Cannot Be Empty</span
+          > -->
+    <!-- <button id="submit-button">Submit</button>
+    </div>
+
+    </form>
+    </div> -->
+
+
+    <!-- <div class="container">
+        <form id="contacus" autocomplete="off">
+            <h4>Contact US</h4>
+            <div class="input-section">
+                <label>Nama Lengkap<span class="required-color">*</span></label>
+                <input type="text" placeholder="Nama Lengkap" id="first-name-input" required />
+                <span id="first-name-error" class="hide required-color error-message">Input yang bener! :-P</span>
+                <span id="empty-first-name" class="hide required-color error-message">Nama Lengkap Tidak Boleh Kosong</span>
+            </div>
+            <div class="input-section">
+
+
+                <div class="input-section">
+                    <label>Email <span class="required-color">*</span></label>
+                    <input type="email" placeholder="Enter Email" id="email" required />
+                    <span id="email-error" class="hide required-color error-message">Input yang bener! :-P</span>
+                    <span id="empty-email" class="hide required-color error-message">Email Tidak Boleh Kosong</span>
+                </div>
+
+                <button id="submit-button">Submit</button>
             </div>
         </form>
 
-    </div>
+    </div> -->
 
 
-    <div>
 
-        <div class="container-logo">
-            <img src="../assets/img/logo2.png" alt="">
-        </div>
-        <div class="container">
-            <h5>Anisa Bintang</h5>
-            <em>"Ibu Rumah Tangga, 28"</em>
+    <div id="copyright">
+        <div class="wrapper">
+            &copy; 2023. <b>Website - Latihan @Robi Pratama Septian Shah.</b> All Rights Reserved.
         </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-    <div class="container">
-
-        <div class="row">
-            <div class="col">
-                <h1>Form Belajar</h1>
-                <p>
-                    Ini Adalah Website Latihan Pertama.
-                </p>
-                <form method="post" action="#">
-
-                    <div class="form-group">
-                        <label for="">Nama Anda:</label>
-                        <input type="text" class="form-control" name="nama" placeholder="Masukkan Nama">
-                    </div>
-
-
-                    <div class="form-group">
-                        <label for="">E-mail Anda:</label>
-                        <input type="email" class="form-control" name="email" placeholder="Masukkan Email">
-                    </div>
-
-                    <div class="bootstrap-iso">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <form action="https://formden.com/post/MlKtmY4x/" class="form-horizontal" method="post">
-                                        <div class="form-group ">
-                                            <label for="date">Tanggal Lahir:</label>
-                                            <div class="col-sm-20">
-                                                <div class="input-group">
-                                                    <div class="input-group-addon">
-                                                        <i class="fa fa-calendar"></i>
-                                                    </div>
-                                                    <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="">Jenis Kelamin</label>
-                        <div class="checkbox">
-                            <label>
-                            <input type="checkbox">Laki-Laki</input>
-                            <br>
-                            <input type="checkbox">Perempuan</input>
-                        </label>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="">Pesan Anda:</label>
-                        <textarea name="pesan" class="form-control" cols="30" rows="7"></textarea>
-                    </div>
-
-                    <input class="btn btn-primary" type="submit" value="POST">
-
-                </form>
-            </div>
-            <div>
-                <div class="col">
-                    <div class="container" id="container2">
-                        <!-- Bootstrap table and table-dark classes -->
-                        <table class="table table-white">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Nama</th>
-                                    <th scope="col">Tanggal Lahir</th>
-                                    <th scope="col">Jenis Kelamin</th>
-                                    <th scope="col">Pesan</th>
-                                    <th scope="col">Profile</th>
-                                    <th scope="col">Delete</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Agus Septian Nugroho</td>
-                                    <td>17 Juni 1996</td>
-                                    <td>Laki-Laki</td>
-                                    <td>Keren</td>
-                                    <td>test</td>
-                                    <td>Delete</td>
-                                </tr>
-                                <tr>
-                                    <td>Sintia Kumara</td>
-                                    <td>23 Juni 1998</td>
-                                    <td>Perempuan</td>
-                                    <td>Mas Ganteng love you</td>
-                                    <td>test</td>
-                                    <td>Delete</td>
-                                </tr>
-                                <tr>
-                                    <td>Maimunah</td>
-                                    <td>03 Maret 1996</td>
-                                    <td>Perempuan</td>
-                                    <td>Apa mas</td>
-                                    <td>test</td>
-                                    <td>Delete</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <hr color="black">
-    <hr color="black">
-    <section class="testi py-5" id="page4">
-        <div class="container">
-            <div class="row">
-                <div class="col text-center">
-                    <h1 class="display-4">Our Headquarter</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <hr>
-                </div>
-            </div>
-            <div class="container1">
-                <div class="row">
-                    <div class="col ">
-                        <div class="card-image" style="width: 20rem;">
-                            <img src="/assets/img/logo3.png" class="card-img-top" alt="...">
-                            <div class="card-body text-justify">
-                                <p class="nameour">Jakarta</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card-image" style="width: 20rem;">
-                            <img src="/assets/img/logo3.png" class="card-img-top" alt="...">
-                            <div class="card-body text-justify">
-                                <p class="nameour">Bandung</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card-image" style="width: 20rem;">
-                            <img src="/assets/img/logo3.png" class="card-img-top" alt="...">
-                            <div class="card-body text-justify">
-                                <p class="nameour">Surabaya</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <hr color="black">
-    <hr color="black">
-    <div class="container">
-
-        <div class="row-5">
-            <div class="col-5">
-                <h1>Message US</h1>
-                <p>
-                    Silahkan Kirimkan Kritik Dan Saran Anda Disini.
-                </p>
-                <form method="post" action="#">
-
-                    <div class="form-group">
-                        <label for="">Nama Anda:</label>
-                        <input type="text" class="form-control" name="nama" placeholder="Masukkan Nama">
-                    </div>
-
-
-                    <div class="form-group">
-                        <label for="">E-mail Anda:</label>
-                        <input type="email" class="form-control" name="email" placeholder="Masukkan Email">
-                    </div>
-
-                    <div class="bootstrap-iso">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <form action="https://formden.com/post/MlKtmY4x/" class="form-horizontal" method="post">
-                                        <div class="form-group ">
-                                            <label for="date">Tanggal Lahir:</label>
-                                            <div class="col-sm-20">
-                                                <div class="input-group">
-                                                    <div class="input-group-addon">
-                                                        <i class="fa fa-calendar"></i>
-                                                    </div>
-                                                    <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="">Jenis Kelamin</label>
-                        <div class="checkbox">
-                            <label>
-                            <input type="checkbox">Laki-Laki</input>
-                            <br>
-                            <input type="checkbox">Perempuan</input>
-                        </label>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="">Pesan Anda:</label>
-                        <textarea name="pesan" class="form-control" cols="30" rows="7" placeholder="Pesan Anda"></textarea>
-                    </div>
-
-                    <input class="btn btn-primary" type="submit" value="POST">
-
-                </form>
-            </div>
-        </div>
-    </div>
-
-
+    <script src="../assets/js/contoh.js"></script>
 
     <script>
-        let slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
+        var nama = prompt("Welcome Masukan Nama Kamu ya")
+        document.getElementById("nama").innerText = nama;
     </script>
+
+    <!-- <script>
+        var nama2 = prompt("Welcome Masukan Nama Kamu ya")
+        document.getElementById("nama2").innerText = nama2;
+    </script> -->
 
     <script>
-        $(document).ready(function() {
-            var date_input = $('input[name="date"]');
-            var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
-            date_input.datepicker({
-                format: 'mm/dd/yyyy',
-                container: container,
-                todayHighlight: true,
-                autoclose: true,
-            })
-        })
-    </script>
+        $(document).on('click', '.send_form', function() {
+            var input_blanter = document.getElementById('wa_email');
 
-    <hr color="black">
-    <footer class="page-footer font-small blue">
-        <div class="footer-copyright text-center py-3" id="btn btn-learna">© 2023 Copyright:
-            <a href="/"> Website Latihan - Robi Pratama Septian Shah</a>
-        </div>
-    </footer>
-    <hr color="black">
+            /* Whatsapp Settings */
+            var walink = 'https://web.whatsapp.com/send',
+                phone = '6281977094280',
+                walink2 = 'Halo saya ingin ',
+                text_yes = 'Terkirim.',
+                text_no = 'Isi semua Formulir lalu klik Send.';
+
+            /* Smartphone Support */
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                var walink = 'whatsapp://send';
+            }
+
+            if ("" != input_blanter.value) {
+
+                /* Call Input Form */
+                var input_select1 = $("#wa_select :selected").text(),
+                    input_name1 = $("#wa_name").val(),
+                    input_email1 = $("#wa_email").val(),
+                    input_number1 = $("#wa_number").val(),
+                    input_url1 = $("#wa_url").val(),
+                    input_textarea1 = $("#wa_textarea").val();
+
+                /* Final Whatsapp URL */
+                var blanter_whatsapp = walink + '?phone=' + phone + '&text=' + walink2 + '%0A%0A' +
+                    '*Name* : ' + input_name1 + '%0A' +
+                    '*Email Address* : ' + input_email1 + '%0A' +
+                    '*Select Option* : ' + input_select1 + '%0A' +
+                    '*Input Number* : ' + input_number1 + '%0A' +
+                    '*URL/Link* : ' + input_url1 + '%0A' +
+                    '*Description* : ' + input_textarea1 + '%0A';
+
+                /* Whatsapp Window Open */
+                window.open(blanter_whatsapp, '_blank');
+                document.getElementById("text-info").innerHTML = '<span class="yes">' + text_yes + '</span>';
+            } else {
+                document.getElementById("text-info").innerHTML = '<span class="no">' + text_no + '</span>';
+            }
+        });
+    </script>
 
 </body>
 

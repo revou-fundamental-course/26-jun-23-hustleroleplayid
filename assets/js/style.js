@@ -1,13 +1,13 @@
-$(document).ready(function() {
-    var date_input = $('input[name="date"]');
-    var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
-    date_input.datepicker({
-        format: 'mm/dd/yyyy',
-        container: container,
-        todayHighlight: true,
-        autoclose: true,
-    })
-})
+var tombolMenu = document.getElementsByClassName('tombol-menu')[0];
+var menu = document.getElementsByClassName('menu')[0];
+
+tombolMenu.onclick = function() {
+    menu.classList.toggle('active');
+}
+
+menu.onclick = function() {
+    menu.classList.toggle('active');
+}
 
 
 let slideIndex = 0;
